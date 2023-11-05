@@ -1,0 +1,71 @@
+body {
+    background: rgb(250, 251, 252);
+    background-image: url("./img/pexels-tim-mossholder-1764702.jpg");
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img { width: 200px;
+height: 200px;
+border-radius: 50%;
+overflow: hidden;
+background-color: rgb(224, 226, 235);
+margin-left: 800px;
+margin-top: 200px;
+display:inline-block;
+vertical-align:middle;
+}  
+
+.p {
+    font-size: 32px;
+    padding: 6%;
+    font-family: fantasy;
+    color: white;
+}
+
+h1 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 350%;
+    color: #11110f;
+}
+   
+button {
+    font-family: 'Bungee Shade', cursive;
+    width: 150px;
+    margin: 0 .5%;
+    font-size: 89%;
+    color:black;
+    background-color:#226c97 ;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #010b14;
+  }
+  
+  
+ button:hover {
+    background-color:#416b9b  ;
+    color: rgb(199, 163, 163);
+  }
+  
+  
+  button:active {
+    font-size: 60%;
+    box-shadow: 0 0 10px #000 inset;
+  }
+  
+ 
+  button:focus  {
+    outline: none;
+    border-color: #03101d;
+  }
+
+  .ball {
+    position: absolute;
+    border-radius: 100%;
+    opacity: 0.7;
+  }
+
+  
