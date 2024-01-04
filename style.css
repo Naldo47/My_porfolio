@@ -1,11 +1,11 @@
 body {
     background: rgb(250, 251, 252);
-    background-image: url("./img/pexels-tim-mossholder-1764702.jpg");
+    background-image: url("./img/pxfuel.jpg");
     height: 100%; 
 
     /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
+    /* background-position: center;
+    background-repeat: no-repeat; */
     background-size: cover;
 }
 
@@ -30,7 +30,7 @@ vertical-align:middle;
 h1 {
     font-family: 'Kaushan Script', cursive;
     font-size: 350%;
-    color: #11110f;
+    color: #e7e7d9;
 }
    
 button {
