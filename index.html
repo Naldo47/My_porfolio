@@ -9,36 +9,62 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="https://kit.fontawesome.com/bbc880301e.js" crossorigin="anonymous"></script>
 <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Porfolio</title>
 </head>
 
 <body>
-<header>
-    <h1>Reinaldo Santana Cuello</h1>
-        <nav>
-     
-            <button id="but0" onclick="about()">Github</button>
-            <button id="but1" onclick="project()">Projects</button>
-            <button id="but2" onclick="contact()" >Contact</button>
-            <button id="but3" onclick="skills()" >Skills</button>
-   
+    <nav class="menu">
+       <section class="menu_container">
+        <h1 class="meny_logo">Reinaldo Santana.</h1>
+       </section>
+
+       <ul class="menu_links">
+        <li class="menu_item">
+        <a href="#" class="menu_link">Home</a>
+    </li>
+
+    <li class="menu_item menu_item--show">
+        <a href="#" class="menu_link">About <img src="assets/arrow.svg" class="menu_arrow"></a>
+
+        <ul class="menu_nesting">
+            <li class="menu_inside">
+                <a href="#" class="menu_link menu_link--inside">About 1</a>
+            </li>
+            <li class="menu_inside">
+                <a href="#" class="menu_link menu_link--inside">About 2</a>
+            </li>
+            <li class="menu_inside">
+                <a href="#" class="menu_link menu_link--inside">About 3</a>
+            </li>
+        </ul>
+    </li>
+    <li class="menu_item">
+        <a href="#" class="meny_link">Project <img src="assets/arrow.svg" class="menu_arrow"></a>
+
+        <ul class="menu_nesting">
+            <li class="menu_inside">
+                <a href="#" class="menu_link menu_link--inside">Project 1</a>
+            </li>
+            <li class="menu_inside">
+                <a href="#" class="menu_link menu_link--inside">Project 2</a>
+            </li>
+            <li class="menu_inside">
+                <a href="#" class="menu_link menu_link--inside">Project 3</a>
+            </li>
+        </ul>
+    </li>
+    <li class="menu_item">
+        <a href="#" class="menu_link">Contact</a>
+    </li>
+       </ul>
     </nav>
-    </header>
-    <main id="img">
-        
-        <!-- <img src="" alt="Avatar">
-
-        <canvas id="stars" width="300" height="300"></canvas> -->
-       
-    </main>
 
 
-<section>
-    <p class="p">Hello, I'm a Software Developer student at Columbia, at the moment I don't have any project finished but in the very near future I will, stay tuned...</p>
-</section>
-
- 
 <script src="./index.js"></script>
 
 </body>

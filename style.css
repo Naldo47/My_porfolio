@@ -1,15 +1,86 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
+  font-family: 'poppins', 'sana-serif';
+}
+
+.menu {
+  background-color: #1A202c;
+  color: #fff;
+  height: 70px;
+}
+
+.menu_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body {
     background: rgb(250, 251, 252);
     background-image: url("./img/pxfuel.jpg");
-    height: 100%; 
+    height: 100%;  */
 
-    /* Center and scale the image nicely */
+    /* Center and scale the image nicely 
     /* background-position: center;
-    background-repeat: no-repeat; */
+    background-repeat: no-repeat; 
     background-size: cover;
 }
 
-img { width: 200px;
+/* img { width: 200px;
 height: 200px;
 border-radius: 50%;
 overflow: hidden;
@@ -18,22 +89,37 @@ margin-left: 800px;
 margin-top: 200px;
 display:inline-block;
 vertical-align:middle;
-}  
+}   */
 
-.p {
+/* .p {
     font-size: 32px;
     padding: 6%;
     font-family: fantasy;
     color: white;
-}
+} */
 
-h1 {
-    font-family: 'Kaushan Script', cursive;
+/* h1 {
+  font-family: 'Bungee Spice', sans-serif;
+font-family: 'Fugaz One', sans-serif;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Tektur', sans-serif;
     font-size: 350%;
     color: #e7e7d9;
-}
+    position: relative; top:45px; left:11%;
+} */
+
+/* h3 {
+  font-family: 'Bungee Spice', sans-serif;
+  font-family: 'Fugaz One', sans-serif;
+  font-family: 'Kaushan Script', cursive;
+  font-family: 'Roboto', sans-serif;
+  font-size: 200%;
+  position: relative; top:60px; left:11%;
+  color: antiquewhite;
+} */
    
-button {
+/* button {
     font-family: 'Bungee Shade', cursive;
     width: 150px;
     margin: 0 .5%;
@@ -43,29 +129,28 @@ button {
     border-radius: 15px;
     box-shadow: 0 0 10px #010b14;
   }
+   */
   
-  
- button:hover {
+ /* button:hover {
     background-color:#416b9b  ;
     color: rgb(199, 163, 163);
-  }
+  } */
   
   
-  button:active {
+  /* button:active {
     font-size: 60%;
     box-shadow: 0 0 10px #000 inset;
-  }
+  } */
   
  
-  button:focus  {
+  /* button:focus  {
     outline: none;
     border-color: #03101d;
-  }
+  } */
 
-  .ball {
+  /* .ball {
     position: absolute;
     border-radius: 100%;
     opacity: 0.7;
-  }
+  } */
 
-  

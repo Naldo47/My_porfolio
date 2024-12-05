@@ -1,12 +1,14 @@
 let bot = document.getElementById("but0") 
 
 
+function project() {
+    document.getElementById("but0").onclick = 
+    location.href = "https://alexwiederman.github.io/Movie_Catalog/";
 
-function about() {
-  
+
 }
 
-function project() {
+function about() {
     document.getElementById("but0").onclick = 
     location.href = "https://alexwiederman.github.io/Movie_Catalog/";
 
@@ -20,12 +22,18 @@ function contact() {
 
 }
 
-function skills() {
-    document.getElementById("but0").onclick = 
-    location.href = "https://alexwiederman.github.io/Movie_Catalog/";
+// bullet games
+const canvas = document.getElementById("game");
+const ctz = canvas.getCon
 
 
-}
+
+
+
+
+
+
+
 
 // Some random colors
 const colors = ["#3CC157", "#2AA7FF", "#1B1B1B", "#FCBC0F", "#F85F36"];
