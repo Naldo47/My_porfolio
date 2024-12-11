@@ -1,78 +1,147 @@
-let bot = document.getElementById("but0") 
+(function() {
+  const listElements = document.querySelectorAll('.menu_item--show');
+  const list = document.querySelector('.menu_links');
+  const menu = document.querySelector('.menu_hamburger');
+
+   const addClick = ()=>{
+    listElements.forEach(element =>{
+     element.addEventListener('click', ()=>{
+
+      let subMenu = element.children[1];
+      let height = 0;
+      element.classList.toggle('menu_item--active');
 
 
-function project() {
-    document.getElementById("but0").onclick = 
-    location.href = "https://alexwiederman.github.io/Movie_Catalog/";
+      if(subMenu.clientHeight === 0){
+        height= subMenu.scrollHeight;
+      }
+
+      subMenu.style.height = `${height}px`;
+
+     });
+    });
+   }
 
 
-}
+      const deleteStyleHeight = ()=>{
+        listElements.forEach(element=>{
 
-function about() {
-    document.getElementById("but0").onclick = 
-    location.href = "https://alexwiederman.github.io/Movie_Catalog/";
+          if(element.children[1].getAttribute('style')){
+            element.children[1].removeAttribute('style');
+            element.classList.remove('menu_item--active');
+          }
+        })
+      }
+
+     window.addEventListener('resize', ()=>{
+      if(window.innerWidth > 800){
+        deleteStyleHeight();
+        console.log(list.classList)
+        if(list.classList.contains('menu_links--show'))
+            list.classList.remove('menu_links--show');
+  
+      }else{
+        addClick();
+      }
+    });
+
+    if(window.innerWidth <= 800){
+      addClick();
+    }
+
+    menu.addEventListener('click', ()=> list.classList.toggle('menu_links--show'));
+    
+  })();
+
+  
 
 
-}
-
-function contact() {
-    document.getElementById("but0").onclick = 
-    location.href = "https://alexwiederman.github.io/Movie_Catalog/";
 
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // bullet games
-const canvas = document.getElementById("game");
-const ctz = canvas.getCon
-
-
-
-
-
-
-
-
+// const canvas = document.getElementById("game");
+// const ctz = canvas.getCon
 
 
 // Some random colors
-const colors = ["#3CC157", "#2AA7FF", "#1B1B1B", "#FCBC0F", "#F85F36"];
+// const colors = ["#3CC157", "#2AA7FF", "#1B1B1B", "#FCBC0F", "#F85F36"];
 
-const numBalls = 50;
-const balls = [];
+// const numBalls = 50;
+// const balls = [];
 
-for (let i = 0; i < numBalls; i++) {
-  let ball = document.createElement("div");
-  ball.classList.add("ball");
-  ball.style.background = colors[Math.floor(Math.random() * colors.length)];
-  ball.style.left = `${Math.floor(Math.random() * 100)}vw`;
-  ball.style.top = `${Math.floor(Math.random() * 100)}vh`;
-  ball.style.transform = `scale(${Math.random()})`;
-  ball.style.width = `${Math.random()}em`;
-  ball.style.height = ball.style.width;
+// for (let i = 0; i < numBalls; i++) {
+//   let ball = document.createElement("div");
+//   ball.classList.add("ball");
+//   ball.style.background = colors[Math.floor(Math.random() * colors.length)];
+//   ball.style.left = `${Math.floor(Math.random() * 100)}vw`;
+//   ball.style.top = `${Math.floor(Math.random() * 100)}vh`;
+//   ball.style.transform = `scale(${Math.random()})`;
+//   ball.style.width = `${Math.random()}em`;
+//   ball.style.height = ball.style.width;
   
-  balls.push(ball);
-  document.body.append(ball);
-}
+//   balls.push(ball);
+//   document.body.append(ball);
+// }
 
-// Keyframes
-balls.forEach((el, i, ra) => {
-  let to = {
-    x: Math.random() * (i % 2 === 0 ? -11 : 11),
-    y: Math.random() * 12
-  };
+// // Keyframes
+// balls.forEach((el, i, ra) => {
+//   let to = {
+//     x: Math.random() * (i % 2 === 0 ? -11 : 11),
+//     y: Math.random() * 12
+//   };
 
-  let anim = el.animate(
-    [
-      { transform: "translate(0, 0)" },
-      { transform: `translate(${to.x}rem, ${to.y}rem)` }
-    ],
-    {
-      duration: (Math.random() + 1) * 2000, // random duration
-      direction: "alternate",
-      fill: "both",
-      iterations: Infinity,
-      easing: "ease-in-out"
-    }
-  );
-});
+//   let anim = el.animate(
+//     [
+//       { transform: "translate(0, 0)" },
+//       { transform: `translate(${to.x}rem, ${to.y}rem)` }
+//     ],
+//     {
+//       duration: (Math.random() + 1) * 2000, // random duration
+//       direction: "alternate",
+//       fill: "both",
+//       iterations: Infinity,
+//       easing: "ease-in-out"
+//     }
+//   );
+// });
