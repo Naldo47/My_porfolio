@@ -105,7 +105,7 @@ body{
   .menu_hamburger {
     display: flex;
   }
-}
+
 
 .menu_item {
   --clip:0;
@@ -165,7 +165,7 @@ body{
   border-left: #4d5f83;
 }
 
-
+}
 
 
 
